@@ -1,13 +1,13 @@
-Ciquidus Alpha - 1.7.1
+XPiquidus Alpha - 1.7.1
 ================
 
-The Chaincoin block explorer.
+The XP block explorer.
 
 This project is a fork of [Iquidus Explorer](https://github.com/iquidus/explorer) so massive thanks go out to Luke Williams for his code! Thank you!!!
 
 ### See it in action
 
-*  [explorer.chaincoin.org](https://explorer.chaincoin.org)
+*  [explorer.xpcoin.io](http://explorer.xpcoin.io/)
 
 
 ### Requires
@@ -36,7 +36,7 @@ Create user with read/write access:
 
 ### Get the source
 
-    git clone https://github.com/suprnurd/ciquidus explorer
+    git clone https://github.com/SOELexicon/-XPiquidus explorer
 
 ### Install node modules
 
@@ -104,8 +104,8 @@ The wallet connected to Ciquidus must be running with atleast the following flag
 
 ### Donate
     
-    CHC: CLkWg5YSLod772uLzsFRxHgHiWVGAJSezm
-    BTC: 1J8Chi5teDJrvBtSuQhioNCHfTNBCcCrPx
+    XP: XR2V6e4Fw8CNLBK8CPbD6kfRKpUmmHw2hP
+    BTC: 1JjHFjQ9x5qZgFcwKApMQsNJYRV2Tsz5DN
 
 ### Known Issues
 
@@ -135,6 +135,7 @@ Where [SIZE] is an integer higher than the default.
 
 ### License
 
+Copyright (c) 2018, Lexicon  
 Copyright (c) 2017, The Chaincoin Community  
 Copyright (c) 2015, Iquidus Technology  
 Copyright (c) 2015, Luke Williams  
