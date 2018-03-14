@@ -1,22 +1,17 @@
-/*
-  This file must be valid JSON. But comments are allowed
-
-  Please edit settings.json, not settings.json.template
-*/
 {
   // name your instance!
-  "title": "CIQUIDUS",
+  "title": "XPlorer",
 
-  "address": "127.0.0.1:3001",
+  "address": "127.0.0.1:80",
 
   // coin name
-  "coin": "Chaincoin",
+  "coin": "Experience Points",
 
   // coin symbol
-  "symbol": "CHC",
+  "symbol": "XP",
 
   // logo
-  "logo": "/images/chain_dark-128x128.png",
+  "logo": "public/images/splash2.png",
 
   // favicon
   "favicon": "public/favicon.ico",
@@ -26,10 +21,10 @@
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Slate",
+  "theme": "Paper",
 
   // port to listen for requests on.
-  "port" : 3001,
+  "port" : 80,
 
   // database settings (MongoDB)
   "dbsettings": {
@@ -47,13 +42,13 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 11995,
-    "user": "chaincoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 28191,
+    "user": "user",
+    "pass": "asdr234134"
   },
 
   // confirmations
-  "confirmations": 40,
+  "confirmations": 6,
 
   // language settings
   "locale": "locale/en.json",
@@ -64,12 +59,12 @@
     "markets": true,
     "richlist": true,
     "twitter": true,
-    "facebook": false,
+    "facebook": true,
     "googleplus": false,
-    "bitcointalk": false,
-    "website": false,
+    "bitcointalk": true,
+    "website": true,
     "slack": false,
-    "github": false,
+    "github": true,
     "search": true,
     "movement": true,
     "network": true
@@ -77,9 +72,9 @@
 
   // index page (valid options for difficulty are POW, POS or Hybrid)
   "index": {
-    "show_hashrate": true,
-    "difficulty": "POW",
-    "last_txs": 100
+    "show_hashrate": false,
+    "difficulty": "Hybrid",
+    "last_txs": 1000
   },
 
   // ensure links on API page are valid
@@ -94,13 +89,13 @@
   //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex, coinexchange
   //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "CHC",
+    "coin": "XP",
     "exchange": "BTC",
-    "enabled": ["cryptopia"],
+    "enabled": ["coinexchange"],
     "cryptopia_id": "2186",
     "ccex_key" : "Get-Your-Own-Key",
-    "coinexchange_id": "18",
-    "default": "cryptopia"
+    "coinexchange_id": "135",
+    "default": "coinexchange"
   },
 
   // richlist/top100 settings
@@ -114,29 +109,29 @@
   // low flag: greater than this value flagged yellow
   // high flag: greater than this value flagged red
   "movement": {
-    "min_amount": 100,
-    "low_flag": 1000,
-    "high_flag": 5000
+    "min_amount": 100000,
+    "low_flag": 1000000,
+    "high_flag": 10000000
   },
 
   // twitter, facebook, googleplus, bitcointalk, github, slack, website
-  "twitter": "suprnurd",
-  "facebook": "yourfacebookpage",
+  "twitter": "TheBigXP",
+  "facebook": "XPDigitalCurrency",
   "googleplus": "yourgooglepluspage",
-  "bitcointalk": "yourbitcointalktopicvalue",
-  "github": "yourgithubusername/yourgithubrepo",
+  "bitcointalk": "2313170",
+  "github": "eXperiencePoints/XPCoin",
   "slack": "yourfullslackinviteurl",
-  "website": "yourfullwebsiteurl",
+  "website": "https://www.xpcoin.io/",
 
   //genesis
-  "genesis_tx": "fa6ef9872494fa9662cf0fecf8c0135a6932e76d7a8764e1155207f3205c7c88",
-  "genesis_block": "00000f639db5734b2b861ef8dbccc33aebd7de44d13de000a12d093bcc866c64",
+  "genesis_tx": "dda0d0ebeabf3fa027972db1aa32aef031b137d06995b272bcafadba7c894846",
+  "genesis_block": "0000065a10945931644cdda436d5ad0742d085e9dee3e7fdd51b822626727e78",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
 
   //amount of txs to index per address (stores latest n txs)
-  "txcount": 100,
+  "txcount": 1000,
 
   //show total sent & received on address page (set false if PoS)
   "show_sent_received": true,
@@ -147,12 +142,12 @@
   // HEAVY: retreive from heavys getsupply api call
   // BALANCES : total of all address balances
   // TXOUTSET : retreive from gettxoutsetinfo api call
-  "supply": "TXOUTSET",
+  "supply": "BALANCES",
 
   // how to acquire network hashrate
   // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s
   // netmhashps: uses getmininginfo.netmhashpsm returns in MH/s
-  "nethash": "getnetworkhashps",
+  "nethash": "netmhashps",
 
   // nethash unitd: sets nethash API return units
   // valid options: "P" (PH/s), "T" (TH/s), "G" (GH/s), "M" (MH/s), "K" (KH/s)
@@ -164,7 +159,8 @@
   // type (optional) = class of label, valid types: default, primary, warning, danger, success
   // url (optional) = url to link to for more information
   "labels": {
-  //  "CLkWg5YSLod772uLzsFRxHgHiWVGAJSezm": {"label": "Donation Address", "type":"primary", "url":"http://example.com"},
-  //  "CaxX1HVWzbQ516w61XbtHR63vNmp2mvLMZ": {"label": "Max Lee War Chest"}
+    //"XRYNAAHp92zFbLrfFtXDosvKm76r3dU7xE ": {"label": "Old dev", "type":"primary", "url":"http://example.com"},
+    //"XRYNAAHp92zFbLrfFtXDosvKm76r3dU7xE": {"label": "Old dev"}
   }
 }
+
