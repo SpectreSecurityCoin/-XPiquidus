@@ -1,13 +1,13 @@
-XPiquidus Alpha - 1.7.1
+iquidus Alpha - 1.7.1
 ================
 
-The XP block explorer.
+The SpectreSecurityCoin block explorer.
 
 This project is a fork of [Iquidus Explorer](https://github.com/iquidus/explorer) so massive thanks go out to Luke Williams for his code! Thank you!!!
 
 ### See it in action
 
-*  [explorer.xpcoin.io](http://explorer.xpcoin.io/)
+*  [address here](address here)
 
 
 ### Requires
@@ -36,7 +36,7 @@ Create user with read/write access:
 
 ### Get the source
 
-    git clone https://github.com/SOELexicon/-XPiquidus explorer
+    git clone https://github.com/SpectreSecurityCoin/-XPiquidus explorer
 
 ### Install node modules
 
